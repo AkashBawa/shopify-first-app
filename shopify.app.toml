@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "8e7de58fe781af83ed6b7f33bc8ff6e2"
+name = "first-pp"
+application_url = "https://quite-modification-destruction-bright.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "akash-test-store34.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://quite-modification-destruction-bright.trycloudflare.com/auth/callback",
+  "https://quite-modification-destruction-bright.trycloudflare.com/auth/shopify/callback",
+  "https://quite-modification-destruction-bright.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
