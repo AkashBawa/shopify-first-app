@@ -17,8 +17,41 @@ import {
 import { authenticate } from "../shopify.server";
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
-  await authenticate.admin(request);
+  console.log("inside app._index.ts")
+  const { admin } = await authenticate.admin(request);
+  // console.log("authenticate is", afterAuthenticate);
 
+  // const response = await admin.graphql(
+
+  // )
+  const response = await admin.graphql(
+    `
+    query {
+      products(first: 10, reverse: true) {
+        edges {
+          node {
+            id
+            title
+            handle
+            resourcePublicationOnCurrentPublication {
+              publication {
+                name
+                id
+              }
+              publishDate
+              isPublished
+            }
+          }
+        }
+      }
+    }
+    `
+  )
+  const productData = await response.json();
+  productData.data.products.edges.forEach((edge: any) => {
+    console.log(edge)
+  })
+  // console.log(await resonse.json())
   return null;
 };
 

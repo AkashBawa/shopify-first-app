@@ -2,7 +2,7 @@
 
 client_id = "8e7de58fe781af83ed6b7f33bc8ff6e2"
 name = "first-pp"
-application_url = "https://quite-modification-destruction-bright.trycloudflare.com"
+application_url = "https://release-brazilian-parenting-renew.trycloudflare.com"
 embedded = true
 
 [build]
@@ -12,13 +12,13 @@ include_config_on_deploy = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "read_customers,read_product_listings,read_products,write_customers,write_products"
 
 [auth]
 redirect_urls = [
-  "https://quite-modification-destruction-bright.trycloudflare.com/auth/callback",
-  "https://quite-modification-destruction-bright.trycloudflare.com/auth/shopify/callback",
-  "https://quite-modification-destruction-bright.trycloudflare.com/api/auth/callback"
+  "https://release-brazilian-parenting-renew.trycloudflare.com/auth/callback",
+  "https://release-brazilian-parenting-renew.trycloudflare.com/auth/shopify/callback",
+  "https://release-brazilian-parenting-renew.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
