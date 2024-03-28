@@ -12,7 +12,9 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - echo building the Jar file
+      - echo Installing node dependencies
+      - npm install
+      - echo dependencies are installed
       - npm run build
       - echo Building the Docker image...
       - docker build -t $REPOSITORY_URI:latest .
@@ -33,7 +35,3 @@ phases:
 artifacts:
   files:
     - imagedefinitions.json
-    - target/springboot-aws-deploy.jar
-
-
-    codebuild-build-for-ci-cd-service-role
