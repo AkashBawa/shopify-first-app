@@ -40,7 +40,7 @@ export default function App() {
         )}
         <ul className={styles.list}>
           <li>
-            Changes made to test the cicd pipeline, to see on server
+            akash bawa Changes made to test the cicd pipeline, to see on server
           </li>
           <li>
             <strong>Product feature</strong>. Some detail about your feature and

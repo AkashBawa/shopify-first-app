@@ -2,7 +2,7 @@
 
 client_id = "8e7de58fe781af83ed6b7f33bc8ff6e2"
 name = "first-pp"
-application_url = "https://centres-shirts-eval-directed.trycloudflare.com"
+application_url = "https://respective-altered-constructed-fraser.trycloudflare.com"
 embedded = true
 
 [build]
@@ -16,9 +16,9 @@ scopes = "read_customers,read_product_listings,read_products,write_customers,wri
 
 [auth]
 redirect_urls = [
-  "https://centres-shirts-eval-directed.trycloudflare.com/auth/callback",
-  "https://centres-shirts-eval-directed.trycloudflare.com/auth/shopify/callback",
-  "https://centres-shirts-eval-directed.trycloudflare.com/api/auth/callback"
+  "https://respective-altered-constructed-fraser.trycloudflare.com/auth/callback",
+  "https://respective-altered-constructed-fraser.trycloudflare.com/auth/shopify/callback",
+  "https://respective-altered-constructed-fraser.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
