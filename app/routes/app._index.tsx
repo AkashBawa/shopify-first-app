@@ -162,8 +162,7 @@ export default function Index() {
                     Get started with products
                   </Text>
                   <Text as="p" variant="bodyMd">
-                    Generate a product with GraphQL and get the JSON output for
-                    that product. Learn more about the{" "}
+                    Akash change this line to see, to see the changes by cicd code pipeline
                     <Link
                       url="https://shopify.dev/docs/api/admin-graphql/latest/mutations/productCreate"
                       target="_blank"
